@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <style>
+        .contact-page{
+            display: grid;
+            grid-template-columns: 1.9fr 1fr ;
+            grid-template-rows: 5fr 1fr;
+            grid-template-areas: "image physical_address"
+                                  "contact_details"
+                                  ;
+            height: 100vh;
+        }
+.contact-page > .img{
+   background-color: brown;
+}
+.contact-page > .details{
+   background-color: red;
+}
+
+    </style>
+    <%- include('partials/menu') %>
+    <div class="contact-page">
+        <div class="img">photo</div>
+        <div class="details">contact-details</div>
+        <div class="contact">contact </div>
+    </div>
+    <!-- <img src="/images/shutterstock_285300212.jpg" style="height: 120vh;"> -->
+</body>
+</html>

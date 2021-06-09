@@ -8,5 +8,9 @@ app.use('/' , express.static('public'))
 app.get('/' , (req , res) =>{
     res.render('index')
 })
-
-app.listen(port)
+app.get('/contact',(req,res)=>{
+    res.render('contact')
+})
+app.listen(port, ()=>{
+    console.log(`port => ${port}`)
+})
